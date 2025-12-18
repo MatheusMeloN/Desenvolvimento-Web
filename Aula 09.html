@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+         // Criando a mochila com alguns itens
+            var mochila = ["corda", "lanterna", "bússola", "água", "comida"];
+        function primeiroItem(){
+            // Mostrar  quantos itens há na mochila
+            alert("A mochila contém " + mochila.length + " itens.");
+
+            // Mostrando o item que está no bolso 0
+            document.getElementById("item0").innerHTML = "Item no bolso 0: " + mochila[0];
+        }
+        function adicionarItens(){
+            // Adicionando novos itens à mochila
+            mochila.push("mapa");
+            mochila.push("kit de primeiros socorros");
+        }
+
+        function mostrarItens(){
+            var itens = "Itens na mochila:\n";
+            for(var i = 0; i < mochila.length; i++){
+                itens += mochila[i] + "\n";
+            }
+            alert(itens);
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Mostar quantos itens há na mochila -->
+
+    <button onclick="primeiroItem()">Exibir primeiro item</button>
+    <p id="item0"></p><br>
+
+    <!-- Adicionar itens à Mochila -->
+    <button onclick="adicionarItens()">Adicionar Itens</button><br>
+
+    <!-- Mostrar todos os itens -->
+    <button onclick="mostrarItens()">Mostrar Itens</button>
+    
+</body>
+</html>

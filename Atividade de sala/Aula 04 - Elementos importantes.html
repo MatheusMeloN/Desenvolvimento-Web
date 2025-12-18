@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Lista de Alunos</title>
+</head>
+<body>
+    <h1>Sistema Simples de Gestão de Alunos</h1>
+    <section>
+        <h2>📝 Formulário de Cadastro</h2>
+        <form action="/salvar-aluno" method="POST">
+            <p>
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome_aluno" required>
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email_aluno" required>
+            </p>
+
+            <p>
+                <label> Gênero:</label><br>
+                <input type="radio" id="masc" name="genero" value="M">
+                <label for="masc">Masculino</label><br>
+
+                <input type="radio" id="fem" name="genero" value="F">
+                <label for="fem">Feminino</label><br>
+
+                <input type="radio" id="outro" name="genero" value="O">
+                <label for="outro">Outro</label><br>
+            </p>
+
+            <p>
+                <label for="turma">Turma:</label><br>
+                <select name="turma_aluno" id="turma" required>
+                    <option value="">Selecionar Turma</option>
+                    <option value="A">Turma A</option>
+                    <option value="B">Turma B</option>
+                    <option value="C">Turma C</option>
+                </select>
+            </p>
+
+            <button type="submit"> Cadastrar Aluno</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>📊 Lista de Alunos Cadastrados</h2>
+    </section>
+
+</body>
+</html>
+
+<!--
+    <!DOCTYPE>: é uma instrução que indica ao navegador qual versão do HTML um documento utiliza.
+    <html>: marcações usadas para estruturar e exibir conteúdo em uma página web.
+    <head>: é a seção de cabeçalho de um documento HTML que contém metadados.
+    <meta>: são códigos HTML inseridos na seção <head> de uma página web para fornecer metadados (informações sobre o conteúdo) a navegadores e mecanismos de busca.
+    <body>: define o corpo de uma página web, contendo todo o conteúdo visível que o usuário vê no navegador.
+    <h1>: etiqueta de código HTML usada para designar o título principal de uma página da web.
+    <section>: é usada para agrupar conteúdo temático em uma seção genérica de um documento.
+    <h2>: representa um subtítulo de segundo nível, usado para organizar o conteúdo da página em seções principais, abaixo do título principal (H1).
+    <hr>: insere uma linha horizontal para criar uma quebra temática ou separar visualmente seções de conteúdo.
+    <form>: é um contêiner essencial que agrupa campos de entrada (como caixas de texto, checkboxes, botões) para coletar dados do usuário, permitindo que esses dados sejam enviados a um servidor para processamento ou usados para interagir com a própria página web.
+    <p>: define um parágrafo de texto, agrupando conteúdo relacionado e sendo visualmente separada de outros blocos por espaços em branco.
+    <label>: cria um "rótulo" ou legenda para um elemento de formulário (como <input>, <textarea>, <select>), explicando sua finalidade, o que melhora muito a acessibilidade e a usabilidade ao permitir que usuários de leitores de tela entendam o campo e que qualquer pessoa possa clicar no texto do rótulo para ativar o campo, aumentando a área de clique.
+    <br>: significa "quebra de linha" (break line) e é usada para introduzir uma nova linha dentro do texto, sem criar um novo parágrafo.
+    <input>: é um elemento fundamental para formulários, criando campos interativos onde o usuário insere dados como texto, números, senhas, e-mails, datas, ou seleciona opções.
+    <select>: cria um menu suspenso (dropdown) ou uma lista de opções onde o usuário pode escolher um ou mais itens.
+    <option>: representa um item selecionável dentro de um menu suspenso (<select>), permitindo que os usuários escolham uma opção de uma lista predefinida em formulários web.
+-->

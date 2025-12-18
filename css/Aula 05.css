@@ -1,0 +1,35 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: purple;
+    font-size: 14px;
+    color: white;
+    padding: 30px;
+}
+
+.container{
+    padding: 50px;
+    background-color: #aa88ff;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#box{
+    color: #32254f;
+}
+
+.container #box{
+    margin-top: 40px;
+    font-size: 1.3rem;
+    border:  2px solid #32254f;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.container p{
+    padding: 10px;
+}
+
+#box p{
+    text-align: center;
+    
+}

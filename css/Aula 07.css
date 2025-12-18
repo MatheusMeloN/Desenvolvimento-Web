@@ -1,0 +1,48 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #5e42a5;
+    font-size: 14px;
+    color: #f2f2f2;
+    padding: 30px;
+}
+
+.container{
+    padding: 50px;
+    background-color: #aa88ff;
+    border-radius: 15px;
+    display: flex;
+}
+
+.box{
+    border: 2px solid #32254f;
+    margin: 20px;
+    height: 230px;
+    width: 350px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.box-1{
+    background-image: url('https://wallpapers.com/images/hd/kaiju-no8-power-release-qofljnnygf2w0rsg.jpg');
+}
+
+.box-2{
+    background-image: url('https://e0.pxfuel.com/wallpapers/492/1017/desktop-wallpaper-naruto-kakashi-giraya-3-4-hokage-naruto-3-4-hokage-kakashi-giraya-thumbnail.jpg');
+}
+
+.box-3{
+    background-image: url('https://i.pinimg.com/474x/90/5b/02/905b02b7fb7d24f23148c47f530d7a39.jpg');  
+}
+
+.box-4{
+    background-image: url('https://t4.ftcdn.net/jpg/13/57/24/07/360_F_1357240730_5qwRRFPbwIS2URtqsDAdq05YKRN0LHMD.jpg');
+    right: 0;
+}
+.box-5{
+    background-image: url('https://preview.redd.it/drop-me-your-best-anime-wallpapers-for-desktop-v0-1a3w6zriyiqe1.png?width=640&crop=smart&auto=webp&s=964952f5d887c044734926079a147014f0bb2036');
+    
+}
+.box-6{
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/295/163/719/anime-anime-boys-picture-in-picture-kimetsu-no-yaiba-kamado-tanjir%C5%8D-hd-wallpaper-preview.jpg');
+}

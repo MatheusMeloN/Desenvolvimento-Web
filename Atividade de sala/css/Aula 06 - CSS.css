@@ -1,0 +1,30 @@
+.box{
+    position:fixed;
+    text-align:center;
+    padding: 50px;
+    font-size: 20px;
+}
+.box1{ 
+    background-color: red;
+    border: 2px solid black;
+    top: 0;
+    left: 0;
+}
+.box2{  
+    background-color: yellow;
+    border: 2px solid black;
+    top: 0;
+    right: 0;
+}
+.box3{  
+    background-color: green;
+    border: 2px solid black;
+    bottom: 0;
+    left: 0;
+}
+.box4{
+    background-color: blue;
+    border: 2px solid black; 
+    bottom: 0;
+    right: 0;  
+}

@@ -1,0 +1,148 @@
+/* RESET BÁSICO */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* 1. LAYOUT FLEXBOX */
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center; /* Centraliza os cartões */
+    gap: 20px; /* Espaço entre os cartões */
+    padding: 20px;
+}
+
+/* 2. ESTILO DO CARTÃO */
+.cartao {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    /* Transição para os efeitos do cartão */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 3. ESTILO DA IMAGEM */
+.cartao img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /* Transição para o efeito de zoom */
+    transition: transform 0.4s ease;
+}
+
+.titulo {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 4. EFEITOS DE INTERAÇÃO (HOVER) */
+.cartao:hover {
+    /* Efeito de elevação */
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cartao:hover img {
+    /* Efeito de zoom na imagem */
+    transform: scale(1.1);
+}
+
+/* 5. RESPONSIVIDADE (MEDIA QUERY) */
+@media screen and (max-width: 650px) {
+.cartao {
+    /* Ocupa 90% da largura da tela em dispositivos menores */
+    width: 90%;
+    }
+}
+
+/*--------------------------------------------------------*/
+/* Upgrade I - Implementação*/
+h2{
+    padding-left: 20px;
+}
+
+.Texto{
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.grid-container {
+  display: grid;
+  /* Formato do grid */
+  grid-template-areas: 
+    "a b"
+    "c d";
+
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+.item-grid{
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    /* Transição para os efeitos do cartão */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.item-grid img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    /* imagens em cinza */
+    filter: grayscale(100%); 
+}
+
+.item-grid:hover {
+    /* Efeito de elevação */
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* imagens coloridas ao passar o mouse */
+.item-grid img:hover {
+    filter: grayscale(0%);
+    transition: filter 0.5s ease;
+    
+}
+
+/*--------------------------------------------------------*/
+/* Animação e cor de fundo*/
+@keyframes entrada3D {
+  0% {
+    transform: rotateY(90deg);
+    background-color: blue;
+  }
+  100% {
+    transform: rotateY(0deg);
+    background-color: red;
+  }
+}
+
+.banner-animado {
+    animation: entrada3D 3s ease-out;
+    padding-left: 50px;
+    perspective: 300px;
+    background-color: red;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    /* Transição para os efeitos do cartão */
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}

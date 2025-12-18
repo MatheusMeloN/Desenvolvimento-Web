@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Aula 10 - IMC.css">
+    <script src="js/Aula 10 - IMC.js" defer></script>
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    
+    <div class="input-group">
+    <div class="header-group">
+        <img src="img/imc_logo.png" alt="logo">
+        <h1>Calculadora de IMC</h1>
+    </div>
+    <hr>
+        <p>Digite seu peso e Altura:</p>
+        <!-- Inserção de peso -->
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" step="0.01" placeholder="ex.: 80">
+        <br><br>
+        <!-- Inserção de altura -->
+        <label for="altura">Altura (m):</label>
+        <input type="number" id="altura" step="0.01" placeholder="ex.: 1.7"><br><br>
+        <!-- Botão para calcular o IMC -->
+        <button onclick="calcularIMC()">Calcular IMC</button>
+    </div>
+
+    
+    
+    <div class="resultado-group">
+        <!-- Adicionar resultado do IMC -->
+        <p id="resultado"></p>
+        <!-- Adicionar resultado classificação do IMC -->
+        <p id="classificacao"></p>
+    </div>
+</body>
+</html>

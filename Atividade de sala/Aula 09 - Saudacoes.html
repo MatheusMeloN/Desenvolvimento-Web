@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Aula 09.css">
+    <script>
+        function saudar() {
+            const nome = document.getElementById('nome').value;
+            if (nome) {
+                alert(`Olá, ${nome}! Seja bem-vindo(a)!`);
+            } else {
+                alert('Por favor, insira seu nome.');
+            }
+        }
+    </script>
+
+    <title>Página de Saudações</title>
+</head>
+<body>
+    <h1>Página de Saudações😁</h1>
+    <p>
+        <label for="nome">Insira seu nome:</label>
+        <input type="text" id="nome" name="nome" required>
+    </p>
+    <button onclick="saudar()">Saudar</button>
+</body>
+</html>
