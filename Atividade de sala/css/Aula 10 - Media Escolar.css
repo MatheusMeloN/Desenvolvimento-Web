@@ -35,3 +35,16 @@ button {
     border-radius: 10px;
     display: none;
 }
+
+.footer {
+    position: absolute;
+    /* Fixa o footer no final da página */
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 0.9rem;
+    backdrop-filter: blur(5px);
+}
